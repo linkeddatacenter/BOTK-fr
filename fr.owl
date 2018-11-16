@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://linkeddata.center/botk-fr/v1#"
+     xml:base="http://linkeddata.center/botk-fr/v1"
+     xmlns:schema="http://schema.org/"
+     xmlns:dpo="http://dbpedia.org/ontology/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:qb="http://purl.org/linked-data/cube#"
+     xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://open.vocab.org/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:interval="http://reference.data.gov.uk/def/intervals/"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://linkeddata.center/botk-fr/v1">
+        <rdfs:seeAlso rdf:resource="https://github.com/linkeddatacenter/BOTK-fr"/>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dc:subject xml:lang="en">fr vocabulary</dc:subject>
+        <owl:versionInfo>V 1.1.0 Release 2018-02-09</owl:versionInfo>
+        <foaf:homepage rdf:resource="http://linkeddata.center/botk-fr"/>
+        <dc:title xml:lang="en">The Finacial Report Vocabulary specification</dc:title>
+        <dc:creator xml:lang="en">Enrico Fagnoni enrico@linkeddata.center</dc:creator>
+        <dc:description xml:lang="en">The Finacial Report Vocabulary (FR) describes some classes used to model a financial report (e.g. a budget report). It is inspired to the &quot;Financial Report Semantics and Dynamics Theory&quot; paper [http://xbrlsite.azurewebsites.net/2016/Library/Theory-2017-06-26.pdf] by Charles Hoffman and  Raynier van Egmond, M.Sc.</dc:description>
+        <rdfs:label xml:lang="en">fr vocabulary</rdfs:label>
+        <dc:rights xml:lang="en">The fr ontology is available under the Creative Commons Attribution 4.0 Unported license; see http://creativecommons.org/licenses/by/4.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement &quot;This work is based on the fr ontology, developed by Enrico Fagnoni&quot; and link back to http://linkeddata.center/</dc:rights>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/modifed -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/modifed"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linkeddata.center/botk-fr/v1#Component -->
+
+    <owl:Class rdf:about="http://linkeddata.center/botk-fr/v1#Component">
+        <rdfs:comment xml:lang="en">a set of facts which go together (tend to be cohesive and share a certain
+common nature) for some specific purpose within a financial report</rdfs:comment>
+        <rdfs:label xml:lang="en">Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linkeddata.center/botk-fr/v1#Fact -->
+
+    <owl:Class rdf:about="http://linkeddata.center/botk-fr/v1#Fact">
+        <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Observation"/>
+        <rdfs:comment xml:lang="en">A fact defines a single, observable, reportable piece of information contained within a financial report, or fact value, contextualized for unambiguous interpretation or analysis by one or more distinguishing characteristics (properties of the fact). A fact value is one property of a fact.
+Every fact has exactly one fact value.
+Facts never exist on their own; they are always organized into components.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://linkeddata.center/botk-fr/v1#FinancialReport -->
+
+    <owl:Class rdf:about="http://linkeddata.center/botk-fr/v1#FinancialReport">
+        <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Dataset"/>
+        <rdfs:comment xml:lang="en">A budget datasource document containing  goverment budget related  data.</rdfs:comment>
+        <rdfs:label xml:lang="en">Financial report</rdfs:label>
+    </owl:Class>
+    
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
