@@ -1,7 +1,7 @@
 Financial Report Vocabulary (FR)
 =================================
 
-FR is a simple [OWL](https://www.w3.org/TR/owl2-primer/) vocabilary to describe a generic financtial report.
+FR is a simple [OWL](https://www.w3.org/TR/owl2-primer/) vocabulary to describe a generic financtial report.
 
 Fr vocabulary be used to capture different perspectives of a report data like historical trends, cross-department and component breakdown . 
 
