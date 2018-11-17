@@ -1,13 +1,13 @@
 Financial Report Vocabulary (FR)
 =================================
 
-FR is a simple [OWL](https://www.w3.org/TR/owl2-primer/) vocabulary to describe a generic financtial report.
+FR is a simple [OWL](https://www.w3.org/TR/owl2-primer/) vocabulary to describe a generic financial report.
 
 Fr vocabulary be used to capture different perspectives of a report data like historical trends, cross-department and component breakdown . 
 
 FR extends the [W3C RDF Data Cube Vocabulary](https://www.w3.org/TR/vocab-data-cube) and it is inspired by the [Financial Report Semantics and Dynamics Theory](doc/Theory-2017-06-26.pdf). 
 
-A **FinancialReport* is dataset that contains a tree of **Components*. The leaf components of such tree are **Facts**.
+A **FinancialReport** is dataset that contains a tree of **Components*. The leaf components of such tree are **Facts**.
 The **Fact** is an observation of a money amount described with some attributes that is reported in a **FinacialReport** dataset.
 
 Fact and components SHOULD be related to one or more **Concept** in a  [SKOS vocabulary](https://www.w3.org/TR/skos-primer) taxonomy.
