@@ -7,11 +7,11 @@ Fr vocabulary be used to capture different perspectives of a report data like hi
 
 FR extends the [W3C RDF Data Cube Vocabulary](https://www.w3.org/TR/vocab-data-cube) and it is inspired by the [Financial Report Semantics and Dynamics Theory](doc/Theory-2017-06-26.pdf). 
 
-The main concept in FR is the **Fact** that is an observation of a money amount described with some attributes that is reported in a **FinactialReport** dataset. Facts  are grouped in finacial report **Component**s  and a component can be part of another component. 
+The main concept in FR is the **Fact** that is an observation of a money amount described with some attributes that is reported in a **FinacialReport** dataset. Facts  are grouped in finacial report **Component**s  and a component can be part of another component. 
 
-In a Financtial report a fact MUST be contained in just one a component and a component CAN be contained in just one other component. The same facts can be contained in different financial reports.
+In a Financial report a fact MUST be contained in just one a component and a component CAN be contained in just one other component. The same facts can be contained in different financial reports.
 
-Every fact and every component is strictly related to a taxonomy of **Concepts**. For defining the **Concepts taxonomy** FR reuses the [SKOS vocabulary](https://www.w3.org/TR/skos-primer).
+Fact and components CAN be  related to one or more **Concept** in a taxonomy. For defining concepts and  taxonomies FR reuses the [SKOS vocabulary](https://www.w3.org/TR/skos-primer). 
 
 Beside Data Cube and SKOS vocabulary, time and SDMX standards are also reused. 
 
@@ -31,7 +31,7 @@ sdmx-measure	| http://purl.org/linked-data/sdmx/2009/measure#	| component proper
 
 ![FR UML diagram](doc/uml-diagram.png)
 
-Some fact properties, if not explicitly defined, can be inherited form the financial report attributes, that provides a default. Also the groups hierarchy can be inferred from the concepts taxonomy structure.
+Some fact properties, if not explicitly defined, can be inherited form the financial report attributes, that provides a default. In some cases, the financial report components can be inferred from the concepts taxonomy structure.
 
 For an usage example of FR vocabulary see [g0v fr-ap application profile](https://github.com/g0v-it/fr-ap)
 
