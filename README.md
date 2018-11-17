@@ -7,10 +7,10 @@ FR vocabulary be used to capture different perspectives of a report data like hi
 
 FR extends the [W3C RDF Data Cube Vocabulary](https://www.w3.org/TR/vocab-data-cube) and it is inspired by the [Financial Report Semantics and Dynamics Theory](doc/Theory-2017-06-26.pdf). 
 
-A **FinancialReport** is dataset that contains a tree of **Components*. The leaf components of such tree are **Facts**.
-The **Fact** is an observation of a money amount described with some attributes that is reported in a **FinacialReport** dataset.
+A **FinancialReport** is dataset that contains a tree of **Component**s. The leafs of the finactial report comonent tree are the **Facts**.
+A **Fact** is an observation of a money amount described with some attributes that is reported in the  Finacial Report.
 
-Fact and components SHOULD be related to one or more **Concept** in a  [SKOS vocabulary](https://www.w3.org/TR/skos-primer) taxonomy.
+Facts and components SHOULD be related to one or more **Concept** in a  [SKOS vocabulary](https://www.w3.org/TR/skos-primer) taxonomy.
 
 The following namespaces are used:
 
@@ -32,7 +32,7 @@ Some fact properties, if not explicitly defined, can be inherited form the finan
 
 For an usage example of FR vocabulary see [g0v fr-ap application profile](https://github.com/g0v-it/fr-ap)
 
-## Editing the FR ontology
+## Editing
 
 The namespace for FR terms is *http://linkeddata.center/botk-fr/v1#*
 
