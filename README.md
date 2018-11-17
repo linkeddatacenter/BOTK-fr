@@ -30,7 +30,7 @@ sdmx-measure	| http://purl.org/linked-data/sdmx/2009/measure#	| component proper
 
 Some fact properties, if not explicitly defined, can be inherited form the financial report attributes, that provides a default. In some cases, the financial report components can be inferred from the concepts taxonomy structure.
 
-For an usage example of FR vocabulary see [g0v fr-ap application profile](https://github.com/g0v-it/fr-ap)
+For a practical usage example of FR vocabulary see [g0v fr-ap application profile](https://github.com/g0v-it/fr-ap)
 
 ## Editing
 
