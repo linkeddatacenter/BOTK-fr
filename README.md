@@ -7,15 +7,12 @@ Fr vocabulary be used to capture different perspectives of a report data like hi
 
 FR extends the [W3C RDF Data Cube Vocabulary](https://www.w3.org/TR/vocab-data-cube) and it is inspired by the [Financial Report Semantics and Dynamics Theory](doc/Theory-2017-06-26.pdf). 
 
-The main concept in FR is the **Fact** that is an observation of a money amount described with some attributes that is reported in a **FinacialReport** dataset. Facts  are grouped in finacial report **Component**s  and a component can be part of another component. 
+A **FinancialReport* is dataset that contains a tree of **Components*. The leaf components of such tree are **Facts**.
+The **Fact** is an observation of a money amount described with some attributes that is reported in a **FinacialReport** dataset.
 
-In a Financial report a fact MUST be contained in just one a component and a component CAN be contained in just one other component. The same facts can be contained in different financial reports.
+Fact and components SHOULD be related to one or more **Concept** in a  [SKOS vocabulary](https://www.w3.org/TR/skos-primer) taxonomy.
 
-Fact and components CAN be  related to one or more **Concept** in a taxonomy. For defining concepts and  taxonomies FR reuses the [SKOS vocabulary](https://www.w3.org/TR/skos-primer). 
-
-Beside Data Cube and SKOS vocabulary, time and SDMX standards are also reused. 
-
-The following namespaces are used in this document:
+The following namespaces are used:
 
 Prefix	        | Namespace	 | Description
 --------------- | ------------------------------------------------- | ----------------
