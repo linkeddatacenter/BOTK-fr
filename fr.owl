@@ -24,8 +24,10 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://linkeddata.center/botk-fr/v1">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/> 
         <rdfs:seeAlso rdf:resource="https://github.com/linkeddatacenter/BOTK-fr"/>
         <dc:creator xml:lang="en">Enrico Fagnoni</dc:creator>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
@@ -35,7 +37,8 @@
         <dc:creator xml:lang="en">Enrico Fagnoni enrico@linkeddata.center</dc:creator>
         <dc:description xml:lang="en">The Finacial Report Vocabulary (FR) describes some classes used to model a financial report (e.g. a budget report). It is inspired to the &quot;Financial Report Semantics and Dynamics Theory&quot; paper [http://xbrlsite.azurewebsites.net/2016/Library/Theory-2017-06-26.pdf] by Charles Hoffman and  Raynier van Egmond, M.Sc.</dc:description>
         <rdfs:label xml:lang="en">fr vocabulary</rdfs:label>
-        <vann:preferredNamespacePrefix rdf:resource="http://linkeddata.center/botk-fr/v1#"/>
+        <vann:preferredNamespacePrefix>fr</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://linkeddata.center/botk-fr/v1#</vann:preferredNamespaceUri> 
         <dc:rights xml:lang="en">The fr ontology is available under the Creative Commons Attribution 4.0 Unported license; see http://creativecommons.org/licenses/by/4.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement &quot;This work is based on the fr ontology, developed by Enrico Fagnoni&quot; and link back to http://linkeddata.center/</dc:rights>
         <owl:versionInfo>V 1.1.0, Release 2018-02-09</owl:versionInfo>
         <vann:preferredNamespacePrefix>fr</vann:preferredNamespacePrefix>
