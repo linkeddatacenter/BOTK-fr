@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://linkeddata.center/botk-fr/v1#"
      xml:base="http://linkeddata.center/botk-fr/v1"
-     xmlns:dpo="http://dbpedia.org/ontology/"
-     xmlns:void="http://rdfs.org/ns/void#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -10,38 +8,37 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:fr="http://linkeddata.center/botk-fr/v1#"
      xmlns:qb="http://purl.org/linked-data/cube#"
-     xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
      xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://open.vocab.org/terms/"
-     xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:interval="http://reference.data.gov.uk/def/intervals/"
-     xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dpo="http://dbpedia.org/ontology/"
+     xmlns:void="http://rdfs.org/ns/void#"
      xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+     xmlns:interval="http://reference.data.gov.uk/def/intervals/"
+     xmlns:time="http://www.w3.org/2006/time#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://linkeddata.center/botk-fr/v1">
-        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/> 
         <rdfs:seeAlso rdf:resource="https://github.com/linkeddatacenter/BOTK-fr"/>
-        <dc:creator xml:lang="en">Enrico Fagnoni</dc:creator>
+        <dc:description xml:lang="en">The Financial Report Vocabulary (FR) describes some classes used to model a financial report (e.g. a budget report). It is inspired to the &quot;Financial Report Semantics and Dynamics Theory&quot; paper [http://xbrlsite.azurewebsites.net/2016/Library/Theory-2017-06-26.pdf] by Charles Hoffman and  Raynier van Egmond, M.Sc.</dc:description>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:subject xml:lang="en">fr vocabulary</dc:subject>
         <foaf:homepage rdf:resource="http://linkeddata.center/botk-fr"/>
-        <dc:title xml:lang="en">The Finacial Report Vocabulary specification</dc:title>
         <dc:creator xml:lang="en">Enrico Fagnoni enrico@linkeddata.center</dc:creator>
-        <dc:description xml:lang="en">The Finacial Report Vocabulary (FR) describes some classes used to model a financial report (e.g. a budget report). It is inspired to the &quot;Financial Report Semantics and Dynamics Theory&quot; paper [http://xbrlsite.azurewebsites.net/2016/Library/Theory-2017-06-26.pdf] by Charles Hoffman and  Raynier van Egmond, M.Sc.</dc:description>
         <rdfs:label xml:lang="en">fr vocabulary</rdfs:label>
-        <vann:preferredNamespacePrefix>fr</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>http://linkeddata.center/botk-fr/v1#</vann:preferredNamespaceUri> 
         <dc:rights xml:lang="en">The fr ontology is available under the Creative Commons Attribution 4.0 Unported license; see http://creativecommons.org/licenses/by/4.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement &quot;This work is based on the fr ontology, developed by Enrico Fagnoni&quot; and link back to http://linkeddata.center/</dc:rights>
+        <vann:preferredNamespaceUri>http://linkeddata.center/botk-fr/v1#</vann:preferredNamespaceUri>
         <owl:versionInfo>V 1.1.0, Release 2018-02-09</owl:versionInfo>
         <vann:preferredNamespacePrefix>fr</vann:preferredNamespacePrefix>
+        <dc:title xml:lang="en">The Financial Report Vocabulary specification</dc:title>
     </owl:Ontology>
     
 
@@ -147,6 +144,7 @@
     <owl:ObjectProperty rdf:about="http://linkeddata.center/botk-fr/v1#fr:concept">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/cube#MeasureProperty"/>
         <rdfs:domain rdf:resource="http://linkeddata.center/botk-fr/v1#Component"/>
+        <rdfs:comment rdf:resource="http://linkeddata.center/botk-fr/v1"/>
         <rdfs:comment xml:lang="en">A SKOS concecpt that describes a fact or a component in a finactial report.</rdfs:comment>
         <rdfs:label xml:lang="en">financial concept</rdfs:label>
     </owl:ObjectProperty>
@@ -159,6 +157,7 @@
         <owl:inverseOf rdf:resource="http://linkeddata.center/botk-fr/v1#fr:isPartOf"/>
         <rdfs:domain rdf:resource="http://linkeddata.center/botk-fr/v1#Component"/>
         <rdfs:range rdf:resource="http://linkeddata.center/botk-fr/v1#Component"/>
+        <rdfs:comment rdf:resource="http://linkeddata.center/botk-fr/v1"/>
         <rdfs:comment xml:lang="en">A related resource that is included either physically or logically in the described resource. Simlar to dct:hasPart</rdfs:comment>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
@@ -170,6 +169,7 @@
     <owl:ObjectProperty rdf:about="http://linkeddata.center/botk-fr/v1#fr:isPartOf">
         <rdfs:domain rdf:resource="http://linkeddata.center/botk-fr/v1#Component"/>
         <rdfs:range rdf:resource="http://linkeddata.center/botk-fr/v1#Component"/>
+        <rdfs:comment rdf:resource="http://linkeddata.center/botk-fr/v1"/>
         <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included. similar to dct:isPartOf</rdfs:comment>
         <rdfs:label xml:lang="en">is part of</rdfs:label>
     </owl:ObjectProperty>
@@ -182,6 +182,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"/>
         <rdfs:domain rdf:resource="http://linkeddata.center/botk-fr/v1#FinancialReport"/>
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+        <rdfs:comment rdf:resource="http://linkeddata.center/botk-fr/v1"/>
         <rdfs:comment xml:lang="en">a reference period interval</rdfs:comment>
         <rdfs:label xml:lang="en">reference period</rdfs:label>
     </owl:ObjectProperty>
@@ -277,6 +278,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">a set of facts which go together (tend to be cohesive and share a certain
 common nature) for some specific purpose within a financial report</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://linkeddata.center/botk-fr/v1"/>
         <rdfs:label xml:lang="en">Component</rdfs:label>
     </owl:Class>
     
@@ -318,6 +320,7 @@ common nature) for some specific purpose within a financial report</rdfs:comment
         <rdfs:comment xml:lang="en">A fact defines a single, observable, reportable piece of information contained within a financial report, or fact value, contextualized for unambiguous interpretation or analysis by one or more distinguishing characteristics (properties of the fact). A fact value is one property of a fact.
 Every fact has exactly one fact value.
 Facts never exist on their own; they are always organized into components.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://linkeddata.center/botk-fr/v1"/>
         <rdfs:label xml:lang="en">Fact</rdfs:label>
     </owl:Class>
     
@@ -342,6 +345,7 @@ Facts never exist on their own; they are always organized into components.</rdfs
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A budget datasource document containing  goverment budget related  data.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://linkeddata.center/botk-fr/v1"/>
         <rdfs:label xml:lang="en">Financial report</rdfs:label>
     </owl:Class>
     
@@ -359,6 +363,12 @@ Facts never exist on their own; they are always organized into components.</rdfs
     
 
 
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -368,6 +378,25 @@ Facts never exist on their own; they are always organized into components.</rdfs
     <!-- http://www.w3.org/2006/time#ProperInterval -->
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#ProperInterval"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linkeddata.center/botk-fr/v1 -->
+
+    <owl:NamedIndividual rdf:about="http://linkeddata.center/botk-fr/v1">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
