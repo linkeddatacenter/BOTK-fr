@@ -6,7 +6,6 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:fr="http://linkeddata.center/botk-fr/v1#"
      xmlns:qb="http://purl.org/linked-data/cube#"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:terms="http://open.vocab.org/terms/"
@@ -25,7 +24,8 @@
      xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
      xmlns:interval="http://reference.data.gov.uk/def/intervals/"
      xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fr="http://linkeddata.center/botk-fr/v1#">
     <owl:Ontology rdf:about="http://linkeddata.center/botk-fr/v1">
         <rdfs:seeAlso rdf:resource="https://github.com/linkeddatacenter/BOTK-fr"/>
         <dc:description xml:lang="en">The Financial Report Vocabulary (FR) describes some classes used to model a financial report (e.g. a budget report). It is inspired to the &quot;Financial Report Semantics and Dynamics Theory&quot; paper [http://xbrlsite.azurewebsites.net/2016/Library/Theory-2017-06-26.pdf] by Charles Hoffman and  Raynier van Egmond, M.Sc.</dc:description>
