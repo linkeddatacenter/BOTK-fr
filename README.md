@@ -3,12 +3,12 @@ Financial Report Vocabulary (FR)
 
 FR is a simple [OWL](https://www.w3.org/TR/owl2-primer/) vocabulary to describe a generic financial report.
 
-FR vocabulary be used to capture different perspectives of a report data like historical trends, cross-department and component breakdown . 
+The FR vocabulary can be used to capture different perspectives of a report data like historical trends, cross-department and component breakdown . 
 
 FR extends the [W3C RDF Data Cube Vocabulary](https://www.w3.org/TR/vocab-data-cube) and it is inspired by the [Financial Report Semantics and Dynamics Theory](doc/Theory-2017-06-26.pdf). 
 
-A **FinancialReport** is dataset that contains a hierarchy of **Component**s. The leafs of the finacial report components tree are the **Facts**.
-A **Fact** is an observation of a money amount described with some attributes that is reported in the  Finacial Report.
+A **FinancialReport** is dataset that contains a hierarchy of **Component**s. The leafs of the financial report components tree are the **Facts**.
+A **Fact** is an observation of a money amount described with some attributes that is reported in the Financial Report.
 
 Facts and components SHOULD be related to one or more **Concept** in a  [SKOS vocabulary](https://www.w3.org/TR/skos-primer) taxonomy.
 
@@ -28,7 +28,7 @@ sdmx-measure	| http://purl.org/linked-data/sdmx/2009/measure#	| component proper
 
 ![FR UML diagram](doc/uml-diagram.png)
 
-Some fact properties, if not explicitly defined, can be inherited form the financial report attributes, that provides a default. In some cases, the financial report components can be inferred from the concepts taxonomy structure.
+Some fact properties, if not explicitly defined, can be inherited form the financial report attributes, that provides a fall-back default. In some cases, the financial report components hierarchy can be inferred from the concepts taxonomy structure.
 
 For a practical usage example of FR vocabulary see [g0v fr-ap application profile](https://github.com/g0v-it/fr-ap)
 
@@ -42,4 +42,4 @@ FR is expressed in a [owl file](fr.owl) serialized as RDF xml. You can edit the 
 
 ## License
 
-The FR ontology is available under the Creative Commons Attribution 3.0 license.
+The FR ontology is available under the Creative Commons Attribution 4.0 license.
