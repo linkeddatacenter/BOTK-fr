@@ -39,11 +39,11 @@ The *fr:FinancialReport* class allows to annotate any Financial report. It is a 
 	sdmx-attribute:unitMeasure <http://publications.europa.eu/resource/authority/currency/EUR> 
 ```
 
-The *fr:Fact* class is a specialization of the qb:Observable class belonging to a financial report and it is used for annotating an atomic amount of money. 
+The *fr:Fact* class is a specialization of the qb: Observation class belonging to a financial report and it is used for annotating an atomic amount of money. 
 The *Fact* meaning is specified by a SKOS concept that can be related to a formal taxonomy (i.e. SKOS scheme)
 
 ```
-:fact_x a qb:Observable, fr:Fact;
+:fact_x a qb:Observation, fr:Fact;
     fr:concept :level_2_account ;
     qb:dataSet :2018_budget_report ;
     fr:amount 188149000000.00  .
