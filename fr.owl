@@ -1,43 +1,43 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://linkeddata.center/botk-fr/v1#"
      xml:base="http://linkeddata.center/botk-fr/v1"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:fr="http://linkeddata.center/botk-fr/v1#"
      xmlns:qb="http://purl.org/linked-data/cube#"
      xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:terms="http://open.vocab.org/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
-     xmlns:dcat="http://www.w3.org/ns/dcat#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dpo="http://dbpedia.org/ontology/"
-     xmlns:void="http://rdfs.org/ns/void#"
-     xmlns:voaf="http://purl.org/vocommons/voaf#"
-     xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
-     xmlns:interval="http://reference.data.gov.uk/def/intervals/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://open.vocab.org/terms/"
+     xmlns:interval="http://reference.data.gov.uk/def/intervals/"
+     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
+     xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+     xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
+     xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+     xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#">
     <owl:Ontology rdf:about="http://linkeddata.center/botk-fr/v1">
-        <rdfs:seeAlso rdf:resource="https://github.com/linkeddatacenter/BOTK-fr"/>
-        <owl:versionInfo>V 1.1.1, Release 2019-01-01</owl:versionInfo>
-        <dc:description xml:lang="en">The Financial Report Vocabulary (FR) describes some classes used to model a financial report (e.g. a budget report). It is inspired to the &quot;Financial Report Semantics and Dynamics Theory&quot; paper [http://xbrlsite.azurewebsites.net/2016/Library/Theory-2017-06-26.pdf] by Charles Hoffman and  Raynier van Egmond, M.Sc.</dc:description>
-        <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <dc:subject xml:lang="en">fr vocabulary</dc:subject>
-        <foaf:homepage rdf:resource="http://linkeddata.center/botk-fr"/>
         <dc:creator xml:lang="en">Enrico Fagnoni enrico@linkeddata.center</dc:creator>
+        <dc:description xml:lang="en">The Financial Report Vocabulary (FR) describes some classes used to model a financial report (e.g. a budget report). It is inspired to the &quot;Financial Report Semantics and Dynamics Theory&quot; paper [http://xbrlsite.azurewebsites.net/2016/Library/Theory-2017-06-26.pdf] by Charles Hoffman and  Raynier van Egmond, M.Sc.</dc:description>
         <dc:rights xml:lang="en">The fr ontology is available under the Creative Commons Attribution 4.0 Unported license; see http://creativecommons.org/licenses/by/4.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement &quot;This work is based on the fr ontology, developed by Enrico Fagnoni&quot; and link back to http://linkeddata.center/</dc:rights>
-        <vann:preferredNamespaceUri>http://linkeddata.center/botk-fr/v1#</vann:preferredNamespaceUri>
-        <vann:preferredNamespacePrefix>fr</vann:preferredNamespacePrefix>
+        <dc:subject xml:lang="en">fr vocabulary</dc:subject>
         <dc:title xml:lang="en">The Financial Report Vocabulary specification</dc:title>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <vann:preferredNamespacePrefix>fr</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://linkeddata.center/botk-fr/v1#</vann:preferredNamespaceUri>
+        <rdfs:seeAlso rdf:resource="https://github.com/linkeddatacenter/BOTK-fr"/>
+        <owl:versionInfo>V 1.1.2, Release 2019-10-11</owl:versionInfo>
+        <foaf:homepage rdf:resource="http://linkeddata.center/botk-fr"/>
     </owl:Ontology>
     
 
@@ -265,6 +265,16 @@
     
 
 
+    <!-- http://linkeddata.center/botk-fr/v1#versionId -->
+
+    <owl:DatatypeProperty rdf:about="http://linkeddata.center/botk-fr/v1#versionId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://linkeddata.center/botk-fr/v1#FinancialReport"/>
+        <rdfs:comment xml:lang="en">a label to distigush different version of a report</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/linked-data/sdmx/2009/measure#obsValue -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/linked-data/sdmx/2009/measure#obsValue"/>
@@ -338,6 +348,13 @@ Facts never exist on their own; they are always organized into components.</rdfs
                 <owl:onProperty rdf:resource="http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://linkeddata.center/botk-fr/v1#FinancialReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkeddata.center/botk-fr/v1#versionId"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A budget datasource document containing  goverment budget related  data.</rdfs:comment>
@@ -434,5 +451,5 @@ Facts never exist on their own; they are always organized into components.</rdfs
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
