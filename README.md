@@ -59,7 +59,7 @@ The *Fact* meaning is specified by a SKOS concept that can be related to a forma
 
 The money currency can be defined as a fact property or inherited from the related Financial report.
 
-The *fr:Component* class is a financial report observable that aggregates facts or of other components. Like  facts, the components must be related to a SKOS concept and have an amount of money associated, but this amount is supposed to be calculated somehow from referenced facts or component (usually is a sum).
+The *fr:Component* class is a financial report observable that aggregates facts or of other components. Like  facts, the components SHOULD be related to a SKOS concept and have an amount of money associated, but this amount is supposed to be calculated somehow from referenced facts or component (usually is a sum).
 
 ```
 :component_z a fr:Component;
