@@ -36,7 +36,7 @@
         <vann:preferredNamespacePrefix>fr</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://linkeddata.center/botk-fr/v1#</vann:preferredNamespaceUri>
         <rdfs:seeAlso rdf:resource="https://github.com/linkeddatacenter/BOTK-fr"/>
-        <owl:versionInfo>V 1.1.2, Release 2019-10-11</owl:versionInfo>
+        <owl:versionInfo>V 1.1.2, Release 2019-10-13</owl:versionInfo>
         <foaf:homepage rdf:resource="http://linkeddata.center/botk-fr"/>
     </owl:Ontology>
     
@@ -144,43 +144,6 @@
         <rdfs:comment xml:lang="en">A SKOS concecpt that describes a fact or a component in a finactial report.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://linkeddata.center/botk-fr/v1#"/>
         <rdfs:label xml:lang="en">financial concept</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://linkeddata.center/botk-fr/v1#hasPart -->
-
-    <owl:ObjectProperty rdf:about="http://linkeddata.center/botk-fr/v1#hasPart">
-        <owl:inverseOf rdf:resource="http://linkeddata.center/botk-fr/v1#isPartOf"/>
-        <rdfs:domain rdf:resource="http://linkeddata.center/botk-fr/v1#Component"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://linkeddata.center/botk-fr/v1#Component"/>
-                    <rdf:Description rdf:about="http://linkeddata.center/botk-fr/v1#Fact"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment xml:lang="en">A related resource that is included either physically or logically in the described resource. Simlar to dct:hasPart</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://linkeddata.center/botk-fr/v1#"/>
-        <rdfs:label xml:lang="en">has part</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://linkeddata.center/botk-fr/v1#hasPartOf -->
-
-    <owl:ObjectProperty rdf:about="http://linkeddata.center/botk-fr/v1#hasPartOf">
-        <owl:inverseOf rdf:resource="http://linkeddata.center/botk-fr/v1#isPartOf"/>
-        <rdfs:domain rdf:resource="http://linkeddata.center/botk-fr/v1#Component"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://linkeddata.center/botk-fr/v1#Component"/>
-                    <rdf:Description rdf:about="http://linkeddata.center/botk-fr/v1#Fact"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
